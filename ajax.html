@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ajax Example</title>
+</head>
+<body>
+    <h1>Simple Ajax Example</h1>
+    <div id="result"></div>
+
+    <!-- Include your script.js file -->
+    <script src="script.js"></script>
+    <script>
+        // Example usage:
+        var url = 'https://roboflow.com/'; // Replace with the URL you want to request
+        makeAjaxRequest(url, function(response) {
+            // Handle the response here, for example, you can update the content of a div
+            document.getElementById('result').innerText = response;
+        });
+    </script>
+</body>
+</html>
